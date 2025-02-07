@@ -6,12 +6,12 @@ int main(){
     switch(ch){
         case'+':
            result=a+b;
-        prinf("%d",result);
-        break;
+           prinf("%d",result);
+           break;
         default:
-        printf("Error: Invalid operator.\n");
-        break;
+           printf("Error: Invalid operator.\n");
+           break;
 
     }
     return 0;
- }
+}
