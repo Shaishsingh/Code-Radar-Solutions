@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int a,b ,result;
+    int a,b,result;
     char ch;
     scanf("%d%d%c",&a,&b,&ch);
     switch(ch){
@@ -9,7 +9,7 @@ int main(){
            prinf("%d",result);
            break;
         default:
-           printf("Error: Invalid operator.\n");
+           printf("error");
            break;
 
     }
