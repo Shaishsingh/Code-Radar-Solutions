@@ -2,8 +2,8 @@
 int main(){
     int num , result;
     scanf("%d",&num);
-    result = num << 31;
-    if(result % 2 != 0)
+    result = num << 1;
+    if(result & 1)
     { printf("Set"); }
     else 
     {printf("Not Set");}
