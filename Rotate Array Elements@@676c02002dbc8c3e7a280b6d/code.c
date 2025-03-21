@@ -36,9 +36,9 @@ int main() {
 
         // Step 3: Print the shifted array
         for (int i = 0; i < n; i++) {
-            printf("%d ", am[i]);
+            printf("%d\n ", am[i]);
         }
-        printf("\n");
+       
     }
 
     return 0;
