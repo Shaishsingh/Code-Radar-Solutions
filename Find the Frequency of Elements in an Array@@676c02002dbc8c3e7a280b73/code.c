@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int n,count =1 ;
-    scanf("%d", &n);
+    int n;
+    scanf("%d", &n); // Read the size of the array
     
     int arr[n];
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d", &arr[i]); // Read elements of the array
     }
 
     int counted[n]; // Array to track counted elements
@@ -19,15 +19,15 @@ int main() {
             continue; // Skip if already counted
         }
 
-        // int count = 1;
-        else {for (int j = i + 1; j < n; j++) {
+        int count = 1;
+        for (int j = i + 1; j < n; j++) {
             if (arr[i] == arr[j]) {
                 count++;
-                counted[j] = 1; }// Mark duplicate as counted
-            }}
-        
+                counted[j] = 1; // Mark duplicate as counted
+            }
+        }
 
-        printf("%d %d\n", arr[i], count);
+        printf("%d = %d\n", arr[i], count);
     }
 
     return 0;
