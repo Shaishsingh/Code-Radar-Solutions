@@ -19,11 +19,12 @@ int main() {
             continue; // Skip if already counted
         }
 
+        else { 
         int count = 1;
         for (int j = i + 1; j < n; j++) {
             if (arr[i] == arr[j]) {
                 count++;
-                counted[j] = 1; // Mark duplicate as counted
+                counted[j] = 1; }// Mark duplicate as counted
             }
         }
 
