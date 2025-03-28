@@ -6,10 +6,10 @@ int main(){
     if(n==1){
         printf("-1\n");
     }
-    bool same = true;               //
+    int same = 1;          //if you ewant to use bool (true,false) ,soyou have to include#include <stdbool.h> 
     for(int i = 1;i<n;i++){
         if(arr[0] != arr[i]){
-        same = false;
+        same = 0;
         break;}
     }
     if(same){
