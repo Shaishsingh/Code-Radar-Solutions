@@ -6,10 +6,11 @@ int main(){
     if(n==1){
         printf("-1\n");
     }
-    int same = true
-    if(int i = 0;i<n;i++){
+    int same = true;
+    for(int i = 0;i<n;i++){
+        if(arr[0] != arr[i]){
         same = false;
-        break;
+        break;}
     }
     if(same){
         printf("-1\n");
