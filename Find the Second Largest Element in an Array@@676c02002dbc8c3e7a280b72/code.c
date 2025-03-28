@@ -8,18 +8,16 @@ int main(){
     }
     if(n==1){
         printf("-1\n");
-        return 0;  //
+        return 0;  // this will help to stop futher exceution 
     }
-    int same = 1;          //if you ewant to use bool (true,false) ,soyou have to include#include <stdbool.h> 
+    int same = 1;          //if you ewant to use bool (true,false) ,so you have to include#include <stdbool.h> 
     for(int i = 1;i<n;i++){
         if(arr[0] != arr[i]){
         same = 0;
-        break;}
-    }
+        break;}}
     if(same){
         printf("-1\n");
     }
-    
     for(int i =0;i<n;i++){
         
     }
