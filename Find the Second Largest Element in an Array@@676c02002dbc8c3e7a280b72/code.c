@@ -6,8 +6,8 @@ int main(){
     if(n==1){
         printf("-1\n");
     }
-    bool same = true;
-    for(int i = 0;i<n;i++){
+    bool same = true;               //
+    for(int i = 1;i<n;i++){
         if(arr[0] != arr[i]){
         same = false;
         break;}
