@@ -9,12 +9,10 @@ int main(){
      scanf("%d",&k);
      int ar[n];
      for(int i =0;i<n;i++){
-        for(j=k;j=0;k--){
+        for(int j=k;j=0;k--){
             ar[j]=arr[i];
         }
      }
      printf("%d",ar[n]);
-
-
-  return 0;
+    return 0;
 }
