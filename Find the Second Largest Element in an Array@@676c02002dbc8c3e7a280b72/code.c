@@ -8,6 +8,7 @@ int main(){
     }
     if(n==1){
         printf("-1\n");
+        return 0;  //
     }
     int same = 1;          //if you ewant to use bool (true,false) ,soyou have to include#include <stdbool.h> 
     for(int i = 1;i<n;i++){
