@@ -4,10 +4,11 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-      scanf("%d",arr[i]);
+      scanf("%d",&arr[i]);
     }
     int c[n];
     int freq=1;
+    int max_freq=0,temp;
     for(int i =0;i<n;i++){
         c[i]=0;
     }
@@ -15,13 +16,17 @@ int main(){
         if(c[i]=1){
             continue;
         }
-        else{
-            for(int j=i+1;j<n;j++){
+        for(int j=i+1;j<n;j++){
              if(arr[i]==arr[j]){
                 freq++;
                 c[j]=1;
              }
-        }
-        }
+             }
+        if(freq>max_freq){
+           max_freq=freq;
+        }     
+        
     }
+   printf("%d",freq); 
+
 }
