@@ -7,15 +7,15 @@ int main(){
       scanf("%d",&arr[i]);
     }
     int c[n];
-    int freq=1;
     int max_freq=0,temp;
     for(int i =0;i<n;i++){
         c[i]=0;
     }
     for(int i=0;i<n;i++){
-        if(c[i]=1){
+        if(c[i]==1){
             continue;
         }
+        int freq = 1;
         for(int j=i+1;j<n;j++){
              if(arr[i]==arr[j]){
                 freq++;
@@ -27,6 +27,6 @@ int main(){
         }     
         
     }
-   printf("%d",freq); 
+   printf("%d",max_freq); 
 
 }
