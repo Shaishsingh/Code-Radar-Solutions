@@ -13,13 +13,13 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(c[i]=1){
-            contuine;
+            continue;
         }
         else{
             for(int j=i+1;j<n;j++){
-             if(arr[i]=arr[j]){
+             if(arr[i]==arr[j]){
                 freq++;
-                c[j]=0;
+                c[j]=1;
              }
         }
         }
