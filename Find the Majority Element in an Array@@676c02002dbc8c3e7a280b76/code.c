@@ -7,7 +7,7 @@ int main(){
       scanf("%d",&arr[i]);
     }
     int c[n];
-    int max_freq=0,temp;
+    int max_freq=0,temp,most_frequent_element=arr[0];
     for(int i =0;i<n;i++){
         c[i]=0;
     }
@@ -22,11 +22,12 @@ int main(){
                 c[j]=1;
              }
              }
-        if(freq>max_freq){
-           max_freq=freq;
+       if (freq > max_freq) {
+            max_freq = freq;
+            most_frequent_element = arr[i];
         }     
         
     }
-   printf("%d",max_freq); 
+   printf("%d",max_frequent_element); 
 
 }
