@@ -31,8 +31,8 @@ int main(){
           duplicate=1;
         }
     }
-    if(duplicate){
-        print("-1");
+    if(duplicate==1){
+        printf("-1");
     }
     else{ printf("%d",most_frequent_element); 
     }
