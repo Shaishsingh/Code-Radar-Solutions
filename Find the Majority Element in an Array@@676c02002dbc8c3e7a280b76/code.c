@@ -15,7 +15,7 @@ int main(){
         if(c[i]==1){
             continue;
         }
-        int freq = 1;
+        int freq = 1;   //inside the loop to reset this everytime loop start
         for(int j=i+1;j<n;j++){
              if(arr[i]==arr[j]){
                 freq++;
@@ -26,8 +26,11 @@ int main(){
             max_freq = freq;
             most_frequent_element = arr[i];
         }     
-        
+        if(most_frequent_element!=1){
+            printf("-1");
+            break;
+        }
     }
-   printf("%d",max_frequent_element); 
+   printf("%d",most_frequent_element); 
 
 }
