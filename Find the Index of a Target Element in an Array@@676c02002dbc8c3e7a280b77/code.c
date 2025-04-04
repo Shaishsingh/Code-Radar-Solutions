@@ -11,7 +11,7 @@ int main(){
     for(int i=0;i<n;i++){
      if(arr[i]==t){
         break;
-        printf("%d",i);
-             }
+        }
+       printf("%d",i); 
     }
 }
