@@ -15,11 +15,11 @@ int main(){
                 break;
             }
         }
-        if(found =1){
+        if(found ==1){
             break;
         }
     }
-    if(found=0){
+    if(found==0){
         printf("-1");
     }
 }
