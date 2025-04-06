@@ -26,7 +26,7 @@ int main(){
             }
     }
     if(count==0){
-        pritnf("YES");
+        printf("YES");
     }
     else{
         printf("NO");
