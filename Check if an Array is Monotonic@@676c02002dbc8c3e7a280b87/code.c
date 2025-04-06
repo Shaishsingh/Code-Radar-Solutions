@@ -28,6 +28,9 @@ int main(){
     if(count==0){
         printf("YES");
     }
+    else if(n==1){
+        printf("YES");
+    }
     else{
         printf("NO");
     }
