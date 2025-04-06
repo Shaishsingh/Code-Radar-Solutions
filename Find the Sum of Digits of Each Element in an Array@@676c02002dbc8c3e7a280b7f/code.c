@@ -3,7 +3,7 @@ int sum(int a) {
     while (a != 0) {
         int p = a % 10;
         s += p;
-        a/10=a;
+        a = a / 10;  //In c left side asigment must be varialbe 
     }
     return s;
 }
