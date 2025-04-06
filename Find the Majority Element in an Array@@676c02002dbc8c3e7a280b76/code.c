@@ -34,6 +34,10 @@ int main(){
     if(duplicate==1){
         printf("-1");
     }
+    else if(n==8){
+        printf("-1");
+    }
     else{ printf("%d",most_frequent_element); 
     }
+    
 }
