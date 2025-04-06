@@ -1,3 +1,4 @@
+#include<stdio.h>
 int sum(int a) {
     int s = 0;
     while (a != 0) {
@@ -16,7 +17,7 @@ int main(){
     }
     int p[n];
     for(int i=0;i<n;i++){
-        p[i=]sum(arr[i])
+        p[i]=sum(arr[i]);
         }
         for(int i=o;i<n;i++){
             printf("%d",p[i]);
