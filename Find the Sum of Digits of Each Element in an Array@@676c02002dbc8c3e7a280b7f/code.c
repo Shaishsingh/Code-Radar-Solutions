@@ -1,6 +1,9 @@
 #include<stdio.h>
 int sum(int a) {
     int s = 0;
+    if(a<0){
+      a=-a;
+    }
     while (a != 0) {
         int p = a % 10;
         s += p;
@@ -19,7 +22,7 @@ int main(){
     for(int i=0;i<n;i++){
         p[i]=sum(arr[i]);
         }
-        for(int i=o;i<n;i++){
-            printf("%d",p[i]);
+        for(int i=0;i<n;i++){
+            printf("%d ",p[i]);
         }
 }
