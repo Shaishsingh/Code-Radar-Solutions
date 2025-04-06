@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include<stdio.h>                //#include<stdlib.h>
 int sum(int a) {
     int s = 0;
     if(a<0){
-      a=-a;
+      a=-a;                      //a=abs(a); another method to convert negative to postive
     }
     while (a != 0) {
         int p = a % 10;
@@ -26,3 +26,6 @@ int main(){
             printf("%d ",p[i]);
         }
 }
+
+
+
