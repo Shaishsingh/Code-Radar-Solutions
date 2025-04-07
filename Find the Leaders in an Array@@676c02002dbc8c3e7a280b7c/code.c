@@ -2,14 +2,11 @@
 
 int main() {
     int size;
-    printf("Enter the size of the array: ");
     scanf("%d", &size);
 
     int arr[size];
     int leaders[size]; // To store leaders temporarily
     int count = 0;
-
-    printf("Enter %d elements:\n", size);
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
@@ -26,4 +23,10 @@ int main() {
     }
 
     // Print leaders in reverse to restore original order
-    printf("Le
+    for (int i = count - 1; i >= 0; i--) {
+        printf("%d ", leaders[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
