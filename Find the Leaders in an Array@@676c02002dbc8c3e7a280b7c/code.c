@@ -1,4 +1,4 @@
-#include <stdio.h>
+leaders[count++] = maxFromRight;#include <stdio.h>
 
 int main() {
     int size;
@@ -12,7 +12,7 @@ int main() {
     }
 
     int maxFromRight = arr[size - 1];
-    leaders[count++] = maxFromRight; // Last element is always a leader
+     // Last element is always a leader
 
     // Traverse from second last to first
     for (int i = size - 2; i >= 0; i--) {
