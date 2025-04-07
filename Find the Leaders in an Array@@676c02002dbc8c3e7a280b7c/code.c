@@ -1,25 +1,29 @@
 #include <stdio.h>
 
-void findLeaders(int arr[], int size) {
-    int maxFromRight = arr[size - 1];  // Last element is always a leader
-    printf("Leaders in the array: ");
-    printf("%d ", maxFromRight);  // Print the last element
+int main() {
+    int size;
+    printf("Enter the size of the array: ");
+    scanf("%d", &size);
 
-    // Traverse the array from second last to the beginning
+    int arr[size];
+    int leaders[size]; // To store leaders temporarily
+    int count = 0;
+
+    printf("Enter %d elements:\n", size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int maxFromRight = arr[size - 1];
+    leaders[count++] = maxFromRight; // Last element is always a leader
+
+    // Traverse from second last to first
     for (int i = size - 2; i >= 0; i--) {
         if (arr[i] >= maxFromRight) {
             maxFromRight = arr[i];
-            printf("%d ", maxFromRight);
+            leaders[count++] = maxFromRight;
         }
     }
-    printf("\n");
-}
 
-int main() {
-    int arr[] = {16, 17, 4, 3, 5, 2};
-    int size = sizeof(arr) / sizeof(arr[0]);
-
-    findLeaders(arr, size);
-
-    return 0;
-}
+    // Print leaders in reverse to restore original order
+    printf("Le
