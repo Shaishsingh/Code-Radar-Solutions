@@ -10,8 +10,11 @@ int main(){
     int large ;   //if you initilize large =0 it will not include negative number
     for(int i=0;i<n;i++){
         if(arr[i]%2==0){
-            count = 1;
-            if(arr[i]>large){
+           if (count == 0) {
+                // First even number
+                large = arr[i];
+                count = 1;}
+            else if(arr[i]>large){
                   large=arr[i];
             }
         }
