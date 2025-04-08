@@ -13,7 +13,7 @@ int main() {
 
     if (n % 2 == 0) {
         int median = (arr[mid] + arr[mid - 1]) / 2;
-        printf("%d", median);
+        printf("%d", median);  //you can directly print and dont need to use median also .
     } else {
         printf("%d", arr[mid]);
     }
