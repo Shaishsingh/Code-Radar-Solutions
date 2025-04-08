@@ -15,13 +15,13 @@ int main(){
     
     while( num>0){
         int digit=num%10;
-       int rev = rev*10 +digit;
+        rev = rev*10 +digit;
        num =num/10;
     }
     if(not_changed_num==rev){
-        printf("%d ",&arr[i]);
-    }
-}
+       count++;
+    }}
+    printf("%d",count);
 }
 
 
