@@ -12,7 +12,7 @@ int main(){
         if(arr[i]%2==0){
            if (count == 0) {
                 // First even number
-                large = arr[i];
+                large = arr[i];   //and here we assign the first value of large 
                 count = 1;}
             else if(arr[i]>large){
                   large=arr[i];
